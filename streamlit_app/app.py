@@ -1,5 +1,7 @@
 from collections import OrderedDict
 
+pip install 
+
 import streamlit as st
 
 # TODO : change TITLE, TEAM_MEMBERS and PROMOTION values in config.py.
@@ -14,10 +16,10 @@ st.set_page_config(
     page_icon="https://datascientest.com/wp-content/uploads/2020/03/cropped-favicon-datascientest-1-32x32.png",
 )
 
-with open("style.css", "r") as f:
-    style = f.read()
+#with open("style.css", "r") as f:
+ #   style = f.read()
 
-st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
+#st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
 
 
 # TODO: add new and/or renamed tab in this ordered dict by
@@ -39,7 +41,7 @@ def run():
     )
     tab_name = st.sidebar.radio("", list(TABS.keys()), 0)
     st.sidebar.markdown("---")
-    st.sidebar.markdown(f"## {config.PROMOTION}")
+    #st.sidebar.markdown(f"## {config.PROMOTION}")
 
     st.sidebar.markdown("### Team members:")
     for member in config.TEAM_MEMBERS:
