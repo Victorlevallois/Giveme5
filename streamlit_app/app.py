@@ -17,9 +17,8 @@ st.set_page_config(
 )
 
 with open("style.css") as f:
-    style = f.read()
-
-st.markdown(f"<style>{style}</style>", unsafe_allow_html=True)
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    #style = f.read()
 
 
 # TODO: add new and/or renamed tab in this ordered dict by
