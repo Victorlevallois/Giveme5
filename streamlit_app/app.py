@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-pip install 
+#pip install 
 
 import streamlit as st
 
